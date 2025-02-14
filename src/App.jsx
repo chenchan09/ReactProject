@@ -26,14 +26,15 @@ const API_OPTIONS = {
 // };
 
 const App = () => {
-const [searchTerm, setSearchTerm] = useState('');
-const [errorMessage, seterrorMessage] = useState('')
-const [movieList, setmovieList] = useState([]);
-const [isLoading, setisLoading] = useState(false)
+  
 const [debounceSearchTerm, setdebounceSearchTerm] = useState('');
+const [searchTerm, setSearchTerm] = useState('');
+const [movieList, setmovieList] = useState([]);
+const [errorMessage, seterrorMessage] = useState('')
+const [isLoading, setisLoading] = useState(false)
 const [trendingMovies, settrendingMovies] = useState([]);
 
-
+//test comment
 
 useDebounce(()=> setdebounceSearchTerm(searchTerm), 600, [searchTerm])
   const fetchMovies = async (query = '')=>{
