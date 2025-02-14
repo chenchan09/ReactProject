@@ -33,7 +33,7 @@ const [isLoading, setisLoading] = useState(false)
 const [debounceSearchTerm, setdebounceSearchTerm] = useState('');
 const [trendingMovies, settrendingMovies] = useState([]);
 
-
+//test_12354
 
 useDebounce(()=> setdebounceSearchTerm(searchTerm), 600, [searchTerm])
   const fetchMovies = async (query = '')=>{
